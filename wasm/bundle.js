@@ -1,9 +1,10 @@
-const fsPromises = require('fs/promises');
+const fs = require('fs');
 const TextDecoder = require('util').TextDecoder;
 const TextEncoder = require('util').TextEncoder;
+const promisify = require('util').promisify;
 
 function fetchAndInstantiate(url, importObject) {
-  return fsPromises.readFile(url).then(bytes =>
+  return promisify(fs.readFile)(url).then(bytes =>
     WebAssembly.instantiate(bytes, importObject)
   ).then(results =>
     results.instance

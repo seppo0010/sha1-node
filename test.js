@@ -1,11 +1,12 @@
 const wasm = require('./wasm')
 const js = require('./js')
+const neon = require('./neon')
 const Benchmark = require('benchmark');
 
 var suite = new Benchmark.Suite;
 
 wasm.ready.then(() => {
-  const libs = ['wasm', 'js']
+  const libs = ['wasm', 'js', 'neon']
   libs.forEach(name => {
     suite.add(name + '#short', () => {
       const lib = require('./' + name)
