@@ -1,0 +1,14 @@
+{
+  "name": "neon",
+  "version": "0.1.0",
+  "description": "sha1 digest using neon",
+  "main": "lib/index.js",
+  "author": "Sebastian Waisbrot <seppo0010@gmail.com>",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "neon-cli": "^0.1.22"
+  },
+  "scripts": {
+    "install": "neon build"
+  }
+}
