@@ -1,4 +1,9 @@
 {
+  "name": "sha1",
+  "version": "0.1.0",
+  "description": "sha1 digest using js",
+  "author": "Sebastian Waisbrot <seppo0010@gmail.com>",
+  "license": "BSD-3-Clause",
   "dependencies": {
     "sha1": "^1.1.1"
   }
