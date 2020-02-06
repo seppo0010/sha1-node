@@ -6,9 +6,9 @@
   "author": "Sebastian Waisbrot <seppo0010@gmail.com>",
   "license": "BSD-3-Clause",
   "dependencies": {
-    "neon-cli": "^0.1.22"
+    "neon-cli": "^0.3"
   },
   "scripts": {
-    "install": "neon build"
+    "install": "neon build --release"
   }
 }
