@@ -2,6 +2,7 @@
 name = "sha1-digest"
 version = "0.1.0"
 authors = ["Jan-Erik Rediger <janerik@fnordig.de>"]
+edition = "2018"
 
 [lib]
 path = "src/lib.rs"
