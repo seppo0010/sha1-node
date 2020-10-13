@@ -1,7 +1,7 @@
 all:
 	cd js && npm install
 	cd neon/native && npm install
-	cd wasm/sha1 && cargo build --release --target=wasm32-unknown-unknown
+	cd wasm && wasm-pack build --release --target nodejs
 	npm install
 	node test.js
 
