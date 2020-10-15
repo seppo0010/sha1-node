@@ -1,0 +1,19 @@
+[package]
+name = "sha1-digest"
+version = "0.1.0"
+authors = ["Jan-Erik Rediger <janerik@fnordig.de>"]
+edition = "2018"
+
+[lib]
+path = "src/lib.rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+sha1 = "0.6.0"
+wasm-bindgen="0.2.0"
+js-sys="0.3.0"
+
+[package.metadata.wasm-pack.profile.release]
+wasm-opt = false
+#[profile.release]
+#opt-level = "s"

@@ -2,15 +2,15 @@
 
 Benchmark to compare sha1 implementation in javascript, web assembly and neon.
 
-Results on my laptop
+Results: (Updated 10-12-2020)
 
 ```
-wasm#short x 30,503 ops/sec ±4.48% (68 runs sampled)
-wasm#long x 17,856 ops/sec ±2.82% (78 runs sampled)
-js#short x 123,116 ops/sec ±1.96% (87 runs sampled)
-js#long x 10,177 ops/sec ±2.75% (81 runs sampled)
-neon#short x 214,933 ops/sec ±1.65% (84 runs sampled)
-neon#long x 68,124 ops/sec ±1.64% (85 runs sampled)
+wasm#short x 229,630 ops/sec ±0.47% (85 runs sampled)
+wasm#long x 114,446 ops/sec ±0.49% (89 runs sampled)
+js#short x 275,967 ops/sec ±0.70% (90 runs sampled)
+js#long x 20,944 ops/sec ±0.63% (89 runs sampled)
+neon#short x 691,628 ops/sec ±0.35% (94 runs sampled)
+neon#long x 188,252 ops/sec ±0.39% (91 runs sampled)
 ```
 
 ## Prerequisites
