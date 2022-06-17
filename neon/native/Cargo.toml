@@ -14,5 +14,5 @@ crate-type = ["dylib"]
 neon-build = "0.3"
 
 [dependencies]
-neon = "0.3"
+neon = "0.10"
 sha1 = "0.6.0"
